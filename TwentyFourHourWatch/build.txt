@@ -1,7 +1,6 @@
 displayName = 24-Hour Watch
 author = Andrio Celos
-version = 1.0
+version = 1.0.1
 side = Client
 homepage = https://github.com/AndrioCelos/tModLoader-Mods/tree/main/TwentyFourHourWatch
 includeSource = true
-playableOnPreview = false

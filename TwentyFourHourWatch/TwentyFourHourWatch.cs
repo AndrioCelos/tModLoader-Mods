@@ -21,7 +21,11 @@ public class TwentyFourHourWatch : Mod {
 	}
 
 	public override void Load() {
+#if TML_2022_09
 		IL.Terraria.Player.TileInteractionsUse += this.Player_TileInteractionsUse;
+#else  // Preview version
+		IL_Player.TileInteractionsUse += this.Player_TileInteractionsUse;
+#endif
 	}
 
 	private void Player_TileInteractionsUse(ILContext il) {

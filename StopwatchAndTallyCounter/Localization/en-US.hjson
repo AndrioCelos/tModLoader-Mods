@@ -1,0 +1,15 @@
+
+Mods: {
+	StopwatchAndTallyCounter: {
+		Keybinds: {
+			StopwatchToggle.DisplayName: Stopwatch Toggle
+			StopwatchStartStop.DisplayName: Stopwatch Start/Stop
+			StopwatchReset.DisplayName: Stopwatch Reset
+			StopwatchSplit.DisplayName: Stopwatch Split
+			CounterToggle.DisplayName: Counter Toggle
+			CounterPlus.DisplayName: Counter +1
+			CounterMinus.DisplayName: Counter -1
+			CounterReset.DisplayName: Counter Reset
+		}
+	}
+}

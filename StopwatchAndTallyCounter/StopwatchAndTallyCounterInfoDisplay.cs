@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static StopwatchAndTallyCounter.StopwatchAndTallyCounter;
@@ -33,4 +34,11 @@ public class StopwatchAndTallyCounterInfoDisplay : GlobalInfoDisplay {
 			if (Counter.Showing) displayValue = $"Count: {Counter.Count}";
 		}
 	}
+
+#if !TML_2022_09
+	public override void ModifyDisplayColor(InfoDisplay currentDisplay, ref Color displayColor) {
+		if ((currentDisplay == InfoDisplay.Stopwatch && Stopwatch.Showing) || (currentDisplay == InfoDisplay.TallyCounter && Counter.Showing))
+			displayColor = new(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor);
+	}
+#endif
 }

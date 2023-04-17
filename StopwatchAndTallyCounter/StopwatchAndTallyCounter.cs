@@ -32,6 +32,7 @@ public class StopwatchAndTallyCounter : Mod
 
 	public override void Load() {
 		keybinds = new(
+#if TML_2022_09
 			StopwatchToggleKeybind: KeybindLoader.RegisterKeybind(this, "Stopwatch Toggle", Keys.OemCloseBrackets),
 			StopwatchStartStopKeybind: KeybindLoader.RegisterKeybind(this, "Stopwatch Start/Stop", Keys.P),
 			StopwatchResetKeybind: KeybindLoader.RegisterKeybind(this, "Stopwatch Reset", Keys.O),
@@ -40,6 +41,16 @@ public class StopwatchAndTallyCounter : Mod
 			CounterPlusKeybind: KeybindLoader.RegisterKeybind(this, "Counter +1", Keys.OemPeriod),
 			CounterMinusKeybind: KeybindLoader.RegisterKeybind(this, "Counter -1", Keys.OemComma),
 			CounterResetKeybind: KeybindLoader.RegisterKeybind(this, "Counter Reset", Keys.L)
+#else  // Preview version
+			StopwatchToggleKeybind: KeybindLoader.RegisterKeybind(this, "StopwatchToggle", Keys.OemCloseBrackets),
+			StopwatchStartStopKeybind: KeybindLoader.RegisterKeybind(this, "StopwatchStartStop", Keys.P),
+			StopwatchResetKeybind: KeybindLoader.RegisterKeybind(this, "StopwatchReset", Keys.O),
+			StopwatchSplitKeybind: KeybindLoader.RegisterKeybind(this, "StopwatchSplit", Keys.I),
+			CounterToggleKeybind: KeybindLoader.RegisterKeybind(this, "CounterToggle", Keys.OemOpenBrackets),
+			CounterPlusKeybind: KeybindLoader.RegisterKeybind(this, "CounterPlus", Keys.OemPeriod),
+			CounterMinusKeybind: KeybindLoader.RegisterKeybind(this, "CounterMinus", Keys.OemComma),
+			CounterResetKeybind: KeybindLoader.RegisterKeybind(this, "CounterReset", Keys.L)
+#endif
 		);
 	}
 }
