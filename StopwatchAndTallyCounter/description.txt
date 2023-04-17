@@ -1,0 +1,7 @@
+Use the stopwatch and tally counter as an actual stopwatch and tally counter.
+
+The mod tally counter lets you count up or down by any number. The stopwatch comes with a split function, a count-down mode, and a boss mode which will automatically start the stopwatch when a boss is alive and stop it when no boss is alive any more. The state of both are saved with each character.
+
+Note that the stopwatch only counts in-game time. Pausing or leaving the game will also pause the stopwatch, and any game slowdown will slow the stopwatch too.
+
+This mod is fully client-side and can be used in single player or any multiplayer server.

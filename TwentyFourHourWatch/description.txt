@@ -1,0 +1,1 @@
+Modifies the watch accessory and/or grandfather clock display so that the game will display the time in 24-hour format.
