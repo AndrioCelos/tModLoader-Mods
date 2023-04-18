@@ -1,0 +1,6 @@
+displayName = Menu Title Splash
+author = Andrio Celos
+version = 1.0
+side = client
+homepage = https://github.com/AndrioCelos/tModLoader-Mods/tree/main/MenuTitleSplash
+includeSource = true

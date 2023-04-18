@@ -1,0 +1,1 @@
+Displays the random title message on the title screen, under the logo, similar to the Minecraft title screen. For full-screen players who wouldn't see it normally.
