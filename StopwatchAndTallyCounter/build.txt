@@ -1,6 +1,6 @@
 displayName = True Stopwatch and Tally Counter
 author = Andrio Celos
-version = 1.0.1
+version = 1.0.3
 side = Client
 homepage = https://github.com/AndrioCelos/tModLoader-Mods/tree/main/StopwatchAndTallyCounter
 includeSource = true

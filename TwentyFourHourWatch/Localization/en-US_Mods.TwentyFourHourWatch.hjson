@@ -1,0 +1,15 @@
+Configs: {
+	TwentyFourHourWatchConfig: {
+		DisplayName: Config
+
+		ModifyWatches: {
+			Label: Modify watches
+			Tooltip: If selected, watch info displays will use the 24-hour format.
+		}
+
+		ModifyGrandfatherClocks: {
+			Label: Modify grandfather clocks
+			Tooltip: If selected, grandfather clocks will show the time in 24-hour format.
+		}
+	}
+}

@@ -22,7 +22,7 @@ public class MenuTitleSplash : Mod {
 	public override void Load() {
 #if TML_2022_09
 		IL.Terraria.Main.DrawMenu += this.Main_DrawMenu;
-#else  // Preview version
+#else
 		IL_Main.DrawMenu += this.Main_DrawMenu;
 #endif
 	}

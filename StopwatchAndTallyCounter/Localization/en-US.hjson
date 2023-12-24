@@ -1,4 +1,3 @@
-
 Mods: {
 	StopwatchAndTallyCounter: {
 		Keybinds: {
@@ -10,6 +9,17 @@ Mods: {
 			CounterPlus.DisplayName: Counter +1
 			CounterMinus.DisplayName: Counter -1
 			CounterReset.DisplayName: Counter Reset
+		}
+
+		Configs: {
+			StopwatchAndTallyCounterConfig: {
+				DisplayName: Stopwatch And Tally Counter Config
+
+				AltDisplayColour: {
+					Label: Alt Display Colour
+					Tooltip: Select the colour to show the info displays in when the mod displays are shown.
+				}
+			}
 		}
 	}
 }
