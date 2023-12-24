@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -24,11 +24,12 @@ public class StopwatchAndTallyCounterInfoDisplay : GlobalInfoDisplay {
 					time = -time;
 				}
 
-				var minutes = time / 3600;
+				var hours = time / 216000;
+				var minutes = time / 3600 % 60;
 				var seconds = time / 60 % 60;
 				var cs = time % 60 * 5 / 3;
 
-				displayValue = $"{(minus ? "-" : "")}{minutes:00}' {seconds:00}.{cs:00}\"";
+				displayValue = $"{(minus ? "-" : "")}{(hours > 0 ? $"{hours}h " : "")}{minutes:00}' {seconds:00}.{cs:00}\"";
 			}
 		} else if (currentDisplay == InfoDisplay.TallyCounter) {
 			if (Counter.Showing) displayValue = $"Count: {Counter.Count}";
